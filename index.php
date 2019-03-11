@@ -42,6 +42,8 @@
                 <div class="form-submit">
                     <input type="submit" name="submit" id="submit" class="submit" value="submit" />
                 </div>
+
+            <a href="admin/"><input type="button" name="" style="background-color: green;color: white" value="Admin"></a>
             </form>
         </div>
 
