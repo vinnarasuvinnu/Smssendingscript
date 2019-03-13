@@ -11,8 +11,19 @@
 
     <!-- Main css -->
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript">
-        
+        function call(){
+            var phone=document.getElementById("phone_number").value;
+            phone=parseInt(phone);
+            if(phone > 6000000000 && phone < 9999999999 ){
+
+                return true;
+            }
+         alert("please provide the valid phone_number");
+
+            return false;
+        }
     </script>
 </head>
 <body>
@@ -20,7 +31,7 @@
     <div class="main">
 
         <div class="container">
-            <form method="POST" class="appointment-form" id="appointment-form" action="rec.php" enctype= "multipart/form-data">
+            <form method="POST" onsubmit="return call()" class="appointment-form" id="appointment-form" action="rec.php" enctype= "multipart/form-data">
                 <h2>Sms form requirements</h2>
                 <div class="form-group-1">
 \                    <input type="text" name="name" id="name" placeholder="Your Name" required />
