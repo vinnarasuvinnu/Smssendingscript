@@ -27,7 +27,7 @@ $key++;
 $name[$key]="7349476704";
 
 
-	$senderId = "CutMyQ";
+$senderId = "Govt arts Dharmapuri";
 $route = 4;
 $campaign = "test Camp";
 $sms = array(
